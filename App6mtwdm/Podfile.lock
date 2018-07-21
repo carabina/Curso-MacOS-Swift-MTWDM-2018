@@ -1,0 +1,24 @@
+PODS:
+  - macOSThemeKit (1.2.0)
+  - Socket.IO-Client-Swift (13.2.0):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+
+DEPENDENCIES:
+  - macOSThemeKit (~> 1.2.0)
+  - Socket.IO-Client-Swift (~> 13.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - macOSThemeKit
+    - Socket.IO-Client-Swift
+    - Starscream
+
+SPEC CHECKSUMS:
+  macOSThemeKit: 0445bca9210b61525b3c93dec6ff3491b8c6eed3
+  Socket.IO-Client-Swift: 4698ea9eb2955eecf7fdf06c487ff1597e4cd779
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+
+PODFILE CHECKSUM: 03a4d267830c6f1e7bdc786850549e5908c0cc02
+
+COCOAPODS: 1.5.3
