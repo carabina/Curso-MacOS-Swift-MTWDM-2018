@@ -54,7 +54,7 @@ class ChatViewController: NSViewController {
         
         //print(socket.status)
         
-        socket.emit("new message", CustomDataMsg(username: lblNombre.stringValue, message: txtMensaje.stringValue))
+        socket.emit("new message",CustomDataMsg(message: txtMensaje.stringValue))
         
         let m  = Mensaje()
         m.Msg = "\(lblNombre.stringValue) : \(txtMensaje.stringValue)"
@@ -97,9 +97,7 @@ class ChatViewController: NSViewController {
         print(socket.status)
         
       
-        socket.emit("new message", CustomDataMsg(
-                        username: lblNombre.stringValue,
-                        message: txtMensaje.stringValue) )
+        socket.emit("new message", CustomDataMsg(message: txtMensaje.stringValue) )
   
      
         
@@ -127,7 +125,6 @@ class ChatViewController: NSViewController {
         socket.on("add user"){ data, ack in
  
             let respuesta  = data as! Array<NSDictionary>
-
             socket.emit("login", CustomDataUsers(numUsers: 0))
             
         }
@@ -144,7 +141,7 @@ class ChatViewController: NSViewController {
     }
     
     struct CustomDataMsg : SocketData {
-       let username: String
+       //let username: String
        let message: String
         
         func socketRepresentation() -> SocketData {
